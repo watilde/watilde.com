@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://watilde.github.io/sitemap.xml 

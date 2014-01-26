@@ -1,0 +1,47 @@
+//- Mixin for post, used on homepage and post page
+mixin postHead(post)
+  .post-head.group
+    a(href="#{data.baseUrl}#{post.url}")
+      h1.post-title= post.title
+    span.post-date!= [post.date.getUTCFullYear(), post.date.getUTCMonth() + 1, post.date.getUTCDate()].join(' &#183; ')
+
+mixin post(post)
+  mixin postHead(post)
+  .post-body.markdown!= post.content
+
+doctype 5
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+    link(rel="icon", type="image/png", href="#{data.baseUrl}images/cabin.png")
+    link(href="#{data.baseUrl}styles/main.css", rel="stylesheet")
+    block head
+      title= "watilde.blog"
+  body
+    nav
+      h1.name
+        a(href="#{data.baseUrl}") watilde.blog
+      .menu.icon-menu
+      ul.nav-links
+        li.text-link
+          a(href="#{data.baseUrl}about.html") about
+        li.text-link
+          a(href="#{data.baseUrl}projects.html") projects
+        li.text-link
+          a(href="#{data.baseUrl}archives.html") archives
+
+      .social-media
+        a.icon-github(href="https://github.com/watilde")
+        a.icon-twitter(href="https://twitter.com/watilde")
+    .content
+      block content
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js", type="text/javascript")
+    script(src="#{data.baseUrl}scripts/main.js", type="text/javascript")
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-35821550-3', 'watilde.github.io');
+      ga('send', 'pageview');

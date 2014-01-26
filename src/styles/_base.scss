@@ -1,0 +1,91 @@
+// Choose one of these to be your mainTheme color
+$green: hsl(151, 65%, 60%);
+$blue: hsl(216, 65%, 60%);
+$orange: hsl(6, 90%, 70%);
+$purple: hsl(260, 38%, 56%);
+
+$offBlack: hsl(10, 1%, 22%);
+$grey: lighten($offBlack, 50);
+
+$codeFont: Monaco, Consolas, monospace;
+$postFont: 'Merriweather', serif;
+$headerFont: 'Open Sans', sans-serif;
+
+$mainTheme: $blue;
+$baseTextColor: $offBlack;
+$lightTextColor: $grey;
+
+@mixin breakpoint($point) {
+  @if $point == big-phone {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == small-phone {
+    @media (max-width: 630px)  { @content; }
+  }
+}
+
+// Clearfix
+.group {
+  @include clearfix;
+}
+
+body {
+  margin: 0;
+  color: $baseTextColor;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  font-family: $headerFont;
+  font-size: 17px;
+
+  @include breakpoint(big-phone) {
+    font-size: 16px;
+  }
+
+  @include breakpoint(small-phone) {
+    font-size: 12px;
+  }
+}
+
+.content {
+  position: relative;
+  margin: 30px auto 0;
+  max-width: 680px;
+  width: 55%;
+
+  a {
+    color: $baseTextColor;
+    @include transition(color 0.2s);
+
+    &:hover {
+      color: $mainTheme;
+    }
+  }
+
+  @include breakpoint(big-phone) {
+    margin: 65px auto 25px;
+    width: 86%;
+  }
+
+  @include breakpoint(small-phone) {
+    margin: 50px auto 15px;
+  }
+}
+
+.pagination {
+  width: 100%;
+
+  a {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: .7em 0;
+    text-decoration: none;
+  }
+}
+
+.older {
+  float: left;
+}
+
+.newer {
+  float: right;
+}

@@ -1,0 +1,19 @@
+extends ../layouts/base
+
+block content
+  each post in posts
+    mixin post(post)
+    div.comments
+      a(href="#{data.baseUrl}#{post.url}#comments")
+        span.icon-bubbles
+        | Comments
+
+  .pagination.group
+    - for (var i = 0; i < pages.length; i++) {
+      - var page = pages[i];
+      - if (i === currentIndex - 1) {
+        a.newer(href="#{data.baseUrl}#{page.url}") Newer &#8594;
+      - } else if (i === currentIndex + 1) {
+        a.older(href="#{data.baseUrl}#{page.url}") &#8592; Older
+      - }
+    - }
