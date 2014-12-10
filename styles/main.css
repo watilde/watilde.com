@@ -1,4 +1,4 @@
-@import 'http://fonts.googleapis.com/css?family=Merriweather|Open+Sans';
+@import "http://fonts.googleapis.com/css?family=Merriweather|Open+Sans";
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -6,7 +6,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-/* line 22, ../../src/styles/_normalize.scss */
+/* line 11, ../../src/styles/_normalize.scss */
 article,
 aside,
 details,
@@ -25,7 +25,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 32, ../../src/styles/_normalize.scss */
+/* line 30, ../../src/styles/_normalize.scss */
 audio,
 canvas,
 video {
@@ -90,7 +90,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 95, ../../src/styles/_normalize.scss */
+/* line 94, ../../src/styles/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -120,7 +120,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 126, ../../src/styles/_normalize.scss */
+/* line 125, ../../src/styles/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -156,7 +156,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 164, ../../src/styles/_normalize.scss */
+/* line 161, ../../src/styles/_normalize.scss */
 code,
 kbd,
 pre,
@@ -192,7 +192,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 198, ../../src/styles/_normalize.scss */
+/* line 197, ../../src/styles/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -271,7 +271,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 278, ../../src/styles/_normalize.scss */
+/* line 275, ../../src/styles/_normalize.scss */
 button,
 input,
 select,
@@ -288,7 +288,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 290, ../../src/styles/_normalize.scss */
+/* line 289, ../../src/styles/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -300,7 +300,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 302, ../../src/styles/_normalize.scss */
+/* line 301, ../../src/styles/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -313,7 +313,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 317, ../../src/styles/_normalize.scss */
+/* line 314, ../../src/styles/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -327,7 +327,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 327, ../../src/styles/_normalize.scss */
+/* line 326, ../../src/styles/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -337,7 +337,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-/* line 337, ../../src/styles/_normalize.scss */
+/* line 336, ../../src/styles/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -365,7 +365,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 361, ../../src/styles/_normalize.scss */
+/* line 360, ../../src/styles/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -374,7 +374,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 370, ../../src/styles/_normalize.scss */
+/* line 369, ../../src/styles/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -595,7 +595,7 @@ table {
 
 /* line 156, ../../src/styles/_solarized-dark.scss */
 .highlight .ni {
-  color: purple;
+  color: #800080;
 }
 
 /* line 160, ../../src/styles/_solarized-dark.scss */
@@ -638,7 +638,7 @@ table {
 
 /* line 191, ../../src/styles/_solarized-dark.scss */
 .highlight .vc {
-  color: teal;
+  color: #008080;
 }
 
 /* line 195, ../../src/styles/_solarized-dark.scss */
@@ -693,12 +693,12 @@ table {
 
 /* line 235, ../../src/styles/_solarized-dark.scss */
 .highlight .sb {
-  color: #dd1144;
+  color: #d14;
 }
 
 /* line 239, ../../src/styles/_solarized-dark.scss */
 .highlight .sc {
-  color: #dd1144;
+  color: #d14;
 }
 
 /* line 243, ../../src/styles/_solarized-dark.scss */
@@ -718,7 +718,7 @@ table {
 
 /* line 255, ../../src/styles/_solarized-dark.scss */
 .highlight .sh {
-  color: #dd1144;
+  color: #d14;
 }
 
 /* line 259, ../../src/styles/_solarized-dark.scss */
@@ -728,7 +728,7 @@ table {
 
 /* line 263, ../../src/styles/_solarized-dark.scss */
 .highlight .sx {
-  color: #dd1144;
+  color: #d14;
 }
 
 /* line 267, ../../src/styles/_solarized-dark.scss */
@@ -768,7 +768,7 @@ body {
   margin: 0;
   color: #393838;
   -webkit-font-smoothing: antialiased;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
 }
@@ -795,9 +795,9 @@ body {
 /* line 55, ../../src/styles/_base.scss */
 .content a {
   color: #393838;
-  -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -o-transition: color 0.2s;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 /* line 59, ../../src/styles/_base.scss */
@@ -861,7 +861,7 @@ body {
 .markdown .anchor:hover {
   text-decoration: none;
 }
-/* line 25, ../../src/styles/_markdown.scss */
+/* line 24, ../../src/styles/_markdown.scss */
 .markdown h1, .markdown h2, .markdown h3,
 .markdown h4, .markdown h5, .markdown h6 {
   line-height: 1.3;
@@ -909,10 +909,8 @@ code {
   background: #ebebff;
   border: 1px solid #e6e6e6;
   padding: 0 0.23em;
-  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
   margin: 0;
   font-size: .8em;
@@ -941,10 +939,8 @@ code {
 
 /* line 88, ../../src/styles/_markdown.scss */
 .highlight {
-  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 /* line 91, ../../src/styles/_markdown.scss */
@@ -970,7 +966,6 @@ Note: To edit icons, go to the following url: http://icomoon.io/app/
   font-weight: normal;
   font-style: normal;
 }
-
 /* line 23, ../../src/styles/_icons.scss */
 [class*="icon-"], .header-link {
   font-family: 'icomoon';
