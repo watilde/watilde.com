@@ -1,0 +1,20 @@
+{
+  "name": "watilde.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/watilde/watilde.github.io",
+  "authors": [
+    "Daijiro Wachi <daijiro.wachi@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Processing.js": "~1.4.9"
+  }
+}
