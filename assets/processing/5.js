@@ -12,8 +12,6 @@ void draw () {
   float lastx = -999;
   float lasty = -999;
 
-
-
   background(255);
   strokeWeight(0);
   stroke(120, 80, 0);
