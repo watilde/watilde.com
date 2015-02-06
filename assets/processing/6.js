@@ -1,6 +1,8 @@
+colorFlg = false;
 mouseMoved = false;
 mousex = window.innerWidth / 2;
 mousey = window.innerHeight / 2;
+int count = 0;
 
 void setup() {
   size(window.innerWidth, window.innerHeight);
@@ -26,12 +28,18 @@ void draw() {
     lasty = -999;
     radiusNoise = random(100);
     float radius = 100;
-    stroke(random(20), random(50), random(70), 80);
+    if (count % 12 === 0) {
+      colorFlg = !colorFlg;
+    }
+    if (colorFlg) {
+      stroke(random(255), random(255), random(255), 60);
+    } else {
+      stroke(10, 25, 35, 80);
+    }
     int startangle = int(random(360));
     int endangle = 100 + int(random(400)) + abs(mouseX + mouseY) * 0.05;
     int anglestep = 5 + int(random(3));
     for (float ang = startangle; ang <= endangle; ang += anglestep) {
-      stroke(random(255), random(255), random(255), 80);
       radiusNoise += 0.05;
       radius += 0.5;
       float thisRadius = radius + (noise(radiusNoise) * 200) - 100;
@@ -45,4 +53,5 @@ void draw() {
       lasty = y;
     }
   }
+  count++;
 }
