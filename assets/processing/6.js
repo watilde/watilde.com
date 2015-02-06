@@ -20,7 +20,8 @@ void draw() {
   background(255);
   int centx = width / 2;
   int centy = height / 2;
-  for(float i = 0; i <= 100; i++) {
+  int len = 60 + random(40);
+  for(float i = 0; i <= len; i++) {
     lastx = -999;
     lasty = -999;
     radiusNoise = random(100);
