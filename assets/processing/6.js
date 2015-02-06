@@ -1,5 +1,5 @@
 void setup() {
-  size(800, 450);
+  size(window.innerWidth, window.innerHeight);
   background(255);
   strokeWeight(0.5)
   smooth();
@@ -7,6 +7,7 @@ void setup() {
 }
 
 void draw() {
+  size(window.innerWidth, window.innerHeight);
   background(255);
   int centx = width / 2;
   int centy = height / 2;
@@ -18,11 +19,7 @@ void draw() {
     stroke(random(20), random(50), random(70), 80);
 
     int startangle = int(random(360));
-    if (mousePressed === true) {
-      int endangle = 600 + int(random(600));
-    }else {
-      int endangle = 200 + int(random(600));
-    }
+    int endangle = width * 1/4 + int(random(width * 3/4));
     int anglestep = 5 + int(random(3));
     for (float ang = startangle; ang <= endangle; ang += anglestep) {
       radiusNoise += 0.05;
