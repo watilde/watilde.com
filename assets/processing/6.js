@@ -29,8 +29,8 @@ void draw() {
       radius += 0.5;
       float thisRadius = radius + (noise(radiusNoise) * 200) - 100;
       float rad = radians(ang);
-      x = abs(mouseX - width / 2) * random(10) * 0.1 + centx/1.5 + (thisRadius * cos(rad));
-      y = abs(mouseY - height / 2) * random(10) * 0.1 + centy/1.5 + (thisRadius * sin(rad));
+      x = -(mouseX - centx) * random(10) * 0.1 + centx + (thisRadius * cos(rad));
+      y = -(mouseY - centy) * random(10) * 0.1 + centy + (thisRadius * sin(rad));
       if (lastx > -999) {
         line(x, y, lastx, lasty);
       }
