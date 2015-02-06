@@ -19,7 +19,7 @@ void draw() {
     stroke(random(20), random(50), random(70), 80);
 
     int startangle = int(random(360));
-    int endangle = width * 1/4 + int(random(width * 3/4));
+    int endangle = 100 + int(random(400)) + abs(mouseX + mouseY) * 0.05;
     int anglestep = 5 + int(random(3));
     for (float ang = startangle; ang <= endangle; ang += anglestep) {
       radiusNoise += 0.05;
