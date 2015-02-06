@@ -1,3 +1,7 @@
+mouseMoved = false;
+mousex = window.innerWidth / 2;
+mousey = window.innerHeight / 2;
+
 void setup() {
   size(window.innerWidth, window.innerHeight);
   background(255);
@@ -8,6 +12,11 @@ void setup() {
 
 void draw() {
   size(window.innerWidth, window.innerHeight);
+  mousex = mouseMoved ? mouseX : window.innerWidth / 2;
+  mousey = mouseMoved ? mouseY : window.innerHeight / 2;
+  if (mouseMoved !== true) {
+    if (mouseX !==0 || mouseY !== 0) mouseMoved = true;
+  }
   background(255);
   int centx = width / 2;
   int centy = height / 2;
@@ -17,17 +26,17 @@ void draw() {
     radiusNoise = random(100);
     float radius = 100;
     stroke(random(20), random(50), random(70), 80);
-
     int startangle = int(random(360));
     int endangle = 100 + int(random(400)) + abs(mouseX + mouseY) * 0.05;
     int anglestep = 5 + int(random(3));
     for (float ang = startangle; ang <= endangle; ang += anglestep) {
+      stroke(random(255), random(255), random(255), 80);
       radiusNoise += 0.05;
       radius += 0.5;
       float thisRadius = radius + (noise(radiusNoise) * 200) - 100;
       float rad = radians(ang);
-      x = -(mouseX - centx) * random(10) * 0.1 + centx + (thisRadius * cos(rad));
-      y = -(mouseY - centy) * random(10) * 0.1 + centy + (thisRadius * sin(rad));
+      x = -(mousex - centx) * random(10) * 0.1 + centx + (thisRadius * cos(rad));
+      y = -(mousey - centy) * random(10) * 0.1 + centy + (thisRadius * sin(rad));
       if (lastx > -999) {
         line(x, y, lastx, lasty);
       }
