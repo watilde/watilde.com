@@ -3,6 +3,12 @@ html, body {
   margin: 0;
 }
 
+body {
+  width: 820px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 a, a:visited {
   color: 333;
   text-decoration: none;
@@ -23,7 +29,7 @@ main, header {
 }
 
 footer {
-  width: 100%;
+  width: 820px;
   text-align: center;
   position: absolute;
   bottom: 5px;
