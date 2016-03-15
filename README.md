@@ -1,3 +1,3 @@
-# watilde.github.io
+# watilde.com
 
 The website
