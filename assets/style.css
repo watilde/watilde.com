@@ -17,19 +17,26 @@ a:hover {
   color: #ff8c00;
 }
 
-h1 {
-  font-weight: 200;
-  font-size: 2rem;
-}
-
 header {
   padding-top: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 8px;
   width: 100%;
   margin: auto;
   max-width: 720px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+header h1 {
+  font-weight: 200;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+header p {
+  margin: 0;
+  padding: 4px;
+  background-color: #dddeee;
 }
 
 main {
