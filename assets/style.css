@@ -19,6 +19,7 @@ a:hover {
 
 h1 {
   font-weight: 200;
+  font-size: 2rem;
 }
 
 header {
@@ -44,10 +45,10 @@ main {
 footer {
   border-top: 1px dotted #cccddd;
   width: 100%;
-  padding-bottom: 8px;
 }
 
-footer iframe {
-  position: relative;
-  top: 8px;
+footer main {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
